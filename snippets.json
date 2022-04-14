@@ -1,0 +1,47 @@
+{
+	"first test": {
+		"prefix": "test_me",
+		"body": [
+			"console.log('$1);",
+			"$2"
+		],
+		"description": "test"
+	},
+	"useUpdate": {
+		"prefix": "useUpdate",
+		"body": [
+			"useUpdate(()=> {",
+			"\t$1",
+			"})"
+		],
+		"description": "useUpdate Custom Hook"
+	},
+	"functionalComponent": {
+		"prefix": ["functionalComponent", "nextFuncComponent"],
+		"body": [
+			"export default function $1() {",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t<div className='$2'>",
+			"\t\t\t\t$3",
+			"\t\t\t</div>",
+			"\t\t\t<style jsx>{`",
+			"\t\t\t\t@import 'styles/global-vars';",
+			"\t\t\t\t@import 'styles/media-queries';",
+			"\t\t\t\t// All Devices Styles Start",
+			"\t\t\t\t\t",
+			"\t\t\t\t// All Devices Styles End",
+			"\t\t\t\t@include media-query-phone {",
+			"\t\t\t\t\t",
+			"\t\t\t\t}",
+			"\t\t\t\t@include media-query-desktop {",
+			"\t\t\t\t\t",
+			"\t\t\t\t}",
+			"\t\t\t`}</style>",
+			"\t\t</>",
+			"\t)",
+			"}"
+		],
+		"description": "Functional Component"
+	}
+}
